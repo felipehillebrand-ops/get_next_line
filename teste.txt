@@ -1,0 +1,3 @@
+Arara azul
+Linha 2
+Linha 3 sem quebra
