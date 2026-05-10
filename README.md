@@ -33,7 +33,7 @@ which reads a file descriptor line by line, returning one line per function call
 - Handles files of any size
 - Supports multiple consecutive calls
 - Correctly handles newline characters
-- Efficient memory usage through buffered reading
+- Efficient memory usage using a buffered reading strategy
 - Works with standard input, files, and pipes
 
 ---
@@ -146,12 +146,6 @@ Include the header in your project:
 #include "get_next_line.h"
 ```
 
-Compile your project:
-
-```bash
-cc main.c get_next_line.c get_next_line_utils.c
-```
-
 ---
 
 ## Usage Example
@@ -192,9 +186,9 @@ This project follows the requirements defined by the 42 subject:
 -Wall -Wextra -Werror
 ```
 
-- No global variables
+- No global variables are used
 - Fully compliant with the 42 Norm
-- Uses buffered reading with read()
+- Uses buffered reading with the read() system call
 - Dynamic memory allocation handled manually
 - Static variables used for persistent state management
 
