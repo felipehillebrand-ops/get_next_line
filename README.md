@@ -19,7 +19,7 @@ The final result is a reusable function:
 
 ```c
 char *get_next_line(int fd);
-
+```
 
 which reads a file descriptor line by line, returning one line per function call until the end of the file is reached.
 
